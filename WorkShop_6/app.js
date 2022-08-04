@@ -20,3 +20,13 @@ function registrarUsuario(){
     localStorage.setItem('telefono_user', JSON.stringify(aTelefono));
 
 }
+
+var elementoBotonLimpiar = document.querySelector('#btnLimpiar');
+
+elementoBotonLimpiar.addEventListener('click', limpiarDatos);
+
+function limpiarDatos(){
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("telefono").value = "";
+}
